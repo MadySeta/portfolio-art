@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Funnel+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+@import "tailwindcss";
+
+:root {
+    --purple: #8A52F7;
+    --deep-blue: #010e17;
+    --orange: #DC9E68;
+    --grey-blue: #5c7689;
+}
+
+@theme {
+    --font-sans: 'Funnel Sans', sans-serif;
+    --font-lobtser: 'Lobster', sans-serif;
+    --color-purple: var(--purple);
+    --color-deep-blue: var(--deep-blue);
+    --color-orange: var(--orange);
+    --color-grey-blue: var(--grey-blue);
+}
+
+/* 1. CONFIGURATION POUR CHROME, SAFARI, EDGE */
+
+/* La barre elle-même */
+*::-webkit-scrollbar {
+    width: 6px;
+}
+
+*::-webkit-scrollbar-track {
+    background: transparent;
+    border-radius: 10px;
+    margin: 8px;
+}
+
+*::-webkit-scrollbar-thumb {
+    background: var(--purple);
+    border-radius: 10px;
+    border: 6px solid transparent;
+
+}

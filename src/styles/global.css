@@ -1,0 +1,35 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #010e17;
+    color: aliceblue;
+    font-size: 20px;
+}
+
+/* Styles généraux pour desktop */
+section {
+    padding: 2rem 5rem;
+}
+
+h1 {
+    font-size: 4rem;
+}
+
+.sumo-img {
+    transform: scale(1);
+    transition: transform 1s ease-in-out;
+    position: relative;
+}
+
+.sumo-img:hover {
+    transform: scale(1.2);
+    z-index: 10;
+}
+
+.header-title {
+    font-size: clamp(2rem, 60vw, 10rem)
+}
+
+.video-gallery-subtitle {
+    font-size: clamp(10px, 1vw, 20px)
+}
