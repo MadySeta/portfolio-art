@@ -40,8 +40,8 @@ const About: React.FC<AboutProps> = ({ sections }) => {
             <div className="flex flex-col justify-center items-center lg:w-[70%]">
               <p className="text-center">
                 Je m'appelle <strong> Ava </strong>, étudiante en Arts Numériques passionnée par
-                l’univers du motion design. Je suis actuellement à la recherche d’un stage — idéalement
-                évolutif vers un contrat d'alternance — au sein d’une chaîne de production, afin de mettre
+                l’univers du motion design. Je suis actuellement à la recherche d’un stage - idéalement
+                évolutif vers un contrat d'alternance - au sein d’une chaîne de production, afin de mettre
                 en pratique mes compétences et de participer à des projets concrets dans un environnement professionnel.
               </p>
 

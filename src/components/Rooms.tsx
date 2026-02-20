@@ -44,7 +44,7 @@ export default function Rooms() {
 
         <div className="flex flex-col justify-center w-[30%] ml-6">
           <ProjectTitle title="Chambre low-poly" />
-          <div className="text-center">Projet personnel: initiative et exercice pratique simple sur Maya</div>
+          <div className="text-center">Projet personnel : initiative et exercice pratique simple sur Maya</div>
         </div>
       </div>
 

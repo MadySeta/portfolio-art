@@ -19,7 +19,7 @@ export default function Lego() {
       </div>
 
       <ProjectTitle title="Le voyage de Chihiro en Lego" />
-      <div className="text-center">Projet académique: Modélisation personnage lego sur Maya et textures appliquées sur Substance Painter</div>
+      <div className="text-center">Projet académique : Modélisation personnage lego sur Maya et textures appliquées sur Substance Painter</div>
 
 
       <div className="flex gap-2 w-full justify-around my-12">
