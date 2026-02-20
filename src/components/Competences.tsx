@@ -15,12 +15,13 @@ export interface Logo {
 export default function Competences() {
   const competenceGroup: Competence[] = [
     {
-      title: "Maîtrise de la Suite Adobe",
+      title: "Illustration",
       logos: [
         { logo: "images/competence-logo/photoshop.png", logoName: "Photoshop" },
         { logo: "images/competence-logo/illustrator.png", logoName: "Illustrator" },
         { logo: "images/competence-logo/indesign.png", logoName: "Indesign" },
         { logo: "images/competence-logo/after-effect.png", logoName: "After effect" },
+        { logo: "images/competence-logo/figma.jpg", logoName: "Figma" },
       ],
     },
     {
@@ -51,12 +52,6 @@ export default function Competences() {
       logos: [
         { logo: "images/competence-logo/substance-painter.png", logoName: "Substance Painter" },
         { logo: "images/competence-logo/photoshop.png", logoName: "Photoshop" },
-      ],
-    },
-    {
-      title: "Illustration",
-      logos: [
-        { logo: "images/competence-logo/figma.jpg", logoName: "Figma" },
       ],
     },
   ];

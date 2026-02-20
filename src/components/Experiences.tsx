@@ -12,6 +12,17 @@ export default function Experiences() {
 
   const experiences: Experience[] = [
     {
+      type: "Bénévolat",
+      period: "12/2025 - en cours",
+      company: "GSLille",
+      position: "Commissionaire numérique",
+      details: [
+        "Prise de photos et vidéos des évènements organisés",
+        "Création de contenus multimédias",
+        "Création en équipe d'affiches évènementielles",
+      ],
+    },
+    {
       type: "CDD",
       period: "07/2024 - 08/2024",
       company: "CACF Sofinco",
@@ -43,12 +54,10 @@ export default function Experiences() {
         {/* Compétences techniques */}
         <ProjectTitle title="Expériences professionnelles" />
 
-        <div className="flex flex-col items-center py-10">
-          <div className="flex flex-col md:flex-row gap-10">
-            {experiences.map((exp, i) => (
-              <ExperienceCard key={i} experience={exp} />
-            ))}
-          </div>
+        <div className="flex flex-wrap gap-5 justify-center items-center mt-12">
+          {experiences.map((exp, i) => (
+            <ExperienceCard key={i} experience={exp} />
+          ))}
         </div>
       </div>
     </div>
@@ -57,7 +66,7 @@ export default function Experiences() {
 
 function ExperienceCard({ experience }: { experience: Experience }) {
   return (
-    <div className="p-5 rounded-2xl border-4 w-full max-w-md p-4">
+    <div className="p-5 rounded-2xl border-4 w-87.5 h-100">
       <div className="text-sm text-gray-500">{experience.type} | {experience.period}</div>
       <div className="text-lg font-semibold mt-1">{experience.position}</div>
       <div className="text-md text-[#8A52F7]">{experience.company}</div>
