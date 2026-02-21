@@ -73,46 +73,23 @@ export default function Competences() {
   }, [hovered, competenceGroup.length]);
 
   return (
-    <div className="flex justify-center w-full py-5 my-10">
-      <div className="w-[90%] bg-[#010e17]  p-5 rounded-4xl">
+    <div className="flex flex-col justify-center w-full py-5 mt-10">
 
-        <>
-          <ProjectTitle title="Compétences techniques" />
+      <ProjectTitle title="Compétences techniques" />
 
-          <div className="flex flex-wrap gap-5 justify-center items-center mt-12">
-            {competenceGroup.map((competence, i) => (
-              <CompetenceCard
-                key={competence.title}
-                title={competence.title}
-                logos={competence.logos}
-                flipped={flippedIndex === i}
-                onFlip={() => setFlippedIndex(flippedIndex === i ? null : i)}
-                onHoverChange={(isHovered) => setHovered(isHovered)}
-              />
-            ))}
-          </div>
-        </>
-
-        {/* Langues */}
-        <div className="mt-24">
-          <ProjectTitle title="Langues" />
-          <div className="flex flex-wrap gap-10 justify-center items-center">
-            <div>
-              <img src="images/flag/french.png" alt="logo" className="w-24 h-24 object-contain" />
-            </div>
-
-            <div>
-              <img src="images/flag/british.png" alt="logo" className="w-24 h-24 object-contain" />
-            </div>
-
-            <div>
-              <img src="images/flag/malgachy.png" alt="logo" className="w-24 h-24 object-contain" />
-            </div>
-          </div>
-
-        </div>
-
+      <div className="flex flex-wrap gap-5 justify-center items-center mt-12">
+        {competenceGroup.map((competence, i) => (
+          <CompetenceCard
+            key={competence.title}
+            title={competence.title}
+            logos={competence.logos}
+            flipped={flippedIndex === i}
+            onFlip={() => setFlippedIndex(flippedIndex === i ? null : i)}
+            onHoverChange={(isHovered) => setHovered(isHovered)}
+          />
+        ))}
       </div>
+
     </div>
   );
 }

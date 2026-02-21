@@ -1,3 +1,5 @@
+import Competences from "../components/Competences";
+
 interface HomeProps {
   sectionRef: React.RefObject<HTMLDivElement | null>;
 }
@@ -21,6 +23,8 @@ const Home: React.FC<HomeProps> = ({ sectionRef }) => {
             qui explorent les formes, la couleur et les mouvements
           </p>
         </div>
+
+        <Competences />
 
       </section>
     </>

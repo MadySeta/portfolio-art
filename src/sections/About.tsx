@@ -1,6 +1,6 @@
 import type { Section } from "../App";
-import Competences from "../components/Competences";
 import Experiences from "../components/Experiences";
+import Languages from "../components/Languages";
 import SectionTitle from "../components/SectionTitle";
 import CVSection from "./subsections/CVSection";
 import Formation from "./subsections/Formation";
@@ -57,12 +57,11 @@ const About: React.FC<AboutProps> = ({ sections }) => {
 
           <Formation />
 
-          <div ref={getSectionRef("Expériences/Compétences")}>
+          <div ref={getSectionRef("Expériences")}>
             <Experiences />
-
-            <Competences />
           </div>
 
+          <Languages />
 
           <div ref={getSectionRef("CVs")}>
             <CVSection />

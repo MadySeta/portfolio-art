@@ -49,7 +49,7 @@ const App: React.FC = () => {
       ref: useRef<HTMLDivElement | null>(null),
     },
     {
-      label: "Expériences/Compétences",
+      label: "Expériences",
       ref: useRef<HTMLDivElement | null>(null),
     },
     {

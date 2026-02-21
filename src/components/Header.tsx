@@ -51,6 +51,18 @@ const Header: React.FC<HeaderProps> = ({ sectionRef }) => {
                     ↓ Scroll
                 </div>
             </div>
+
+            <div style={{
+                position: "absolute",
+                bottom: "20px",
+                right: "20px",
+                fontSize: "0.8rem",
+                opacity: 0.5,
+                zIndex: 2,
+                fontStyle: "italic"
+            }}>
+                Video made by Ava
+            </div>
         </section>
     );
 };
